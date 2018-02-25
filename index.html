@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta property="og:title" content="썸네일제목">
+    <meta property="og:image" content="썸네일이미지.jpg">
+
+    <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?clientId=CmJ3hDV23vUWPKzidcUJ&submodules=geocoder"></script>
+
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Frank+Ruhl+Libre|Oswald" rel="stylesheet">
+    <title>Hello, world!</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Disabled</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0 bg-dark botton-color" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <div class="jumbotron jumbotron-fluid background-img">
+        <div class="container">
+            <h1 class="display-4 my-4 tfont">Fluid jumbotron</h1>
+            <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+        </div>
+        <button type="button" class="btn btn-warning">More View +</button>
+    </div>
+    <div class="se_tit">SERVICES<br><span>Lorem ipsum dolor sit amet consectetur.</span></div>
+    <div class="row text-center">
+        <div class="col-sm-4 se_box">
+            <p><img src="../img/sm_01.png" width="100%" class="fish-img"></p>
+            <h4>E-commerce</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+        </div>
+        <div class="col-sm-4 se_box">
+            <p><img src="../img/sm_02.png" width="100%" class="fish-img"></p>
+            <h4>Responsive Design</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+        </div>
+        <div class="col-sm-4 se_box">
+            <p><img src="../img/sm_03.png" width="100%" class="fish-img"></p>
+            <h4>Web Security</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+        </div>
+    </div>
+    
+    
+    
+    <div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <p><img src="../img/180225_01.jpg" width="100%" class="fish-img"></p>
+                    <h3>Threads</h3>
+                    <p>Illustration</p>
+
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12"></div>
+                <div class="col-lg-4 col-md-6 col-sm-12"></div>
+            </div>
+            
+        </div>
+    </div>
+    
+Explore
+Graphic Design
+
+ 
+Finish
+Identity
+
+ 
+Lines
+Branding
+
+ 
+Southwest
+Website Design
+
+ 
+Window
+Photography    
+    
+    <div class="in_background">
+        <div class="container">
+            <div class="in_tit">
+                <h2>CONTACT US</h2>
+                <p>orem ipsum dolor sit amet consectetur.</p>
+            </div>
+            <div class="row text-align">
+                <div class="col-sm-6">
+                    <input class="in_text" type="text" placeholder="your name">
+                    <input class="in_text" type="email" placeholder="your e-mail">
+                    <input class="in_text" type="tel" placeholder="your phone">
+                </div>
+                <div class="col-sm-6">
+                    <textarea class="in_textarea" cols="" rows="6" placeholder="your message"></textarea>
+
+
+                </div>
+            </div>
+            <button type="button" class="btn btn-warning">SEND MESSAGE</button>
+        </div>
+    </div>
+
+    <div id="map" style="width:100%;height:400px;"></div>
+
+    <script>
+        var mapOptions = {
+            center: new naver.maps.LatLng(37.3595704, 127.105399),
+            zoom: 10
+        };
+
+        var map = new naver.maps.Map('map', mapOptions);
+    </script>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
